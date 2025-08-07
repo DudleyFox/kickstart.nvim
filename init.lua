@@ -795,6 +795,7 @@ require('lazy').setup({
       local cd = require 'cyberdream'
       local gold = '#EEE8AA'
       cd.setup {
+        transparent = true,
         theme = {
           highlights = {
             Comment = { fg = 'Green', bg = 'NONE' },
