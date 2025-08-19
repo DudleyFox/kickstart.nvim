@@ -794,22 +794,22 @@ require('lazy').setup({
       local colors = require('cyberdream.colors').default
       local cd = require 'cyberdream'
       local gold = '#EEE8AA'
+      local black = '#000000'
       cd.setup {
         transparent = true,
-        theme = {
-          highlights = {
-            Comment = { fg = 'Green', bg = 'NONE' },
-            Constant = { fg = gold, bg = 'NONE' },
-            Number = { fg = gold, bg = 'NONE' },
-            Float = { fg = gold, bg = 'NONE' },
-            String = { fg = gold, bg = 'NONE' },
-            Boolean = { fg = colors.purple, bg = 'NONE' },
-            Statement = { fg = 'DarkBlue', bg = 'NONE' },
-            Keyword = { fg = colors.purple, bg = 'NONE' },
-            PreProc = { fg = 'Red', bg = 'NONE' },
-            Special = { fg = 'Orange', bg = 'NONE' },
-            Operator = { fg = 'white', bg = 'NONE' },
-          },
+        highlights = {
+          Comment = { fg = 'Green', bg = 'NONE' },
+          Constant = { fg = gold, bg = 'NONE' },
+          Number = { fg = gold, bg = 'NONE' },
+          Float = { fg = gold, bg = 'NONE' },
+          String = { fg = gold, bg = 'NONE' },
+          Boolean = { fg = colors.purple, bg = 'NONE' },
+          Statement = { fg = 'DarkBlue', bg = 'NONE' },
+          Keyword = { fg = colors.purple, bg = 'NONE' },
+          PreProc = { fg = 'Red', bg = 'NONE' },
+          Operator = { fg = 'white', bg = 'NONE' },
+          Special = { fg = 'Orange', bg = 'NONE' },
+          Visual = { bg = 'Orange', fg = black },
         },
       }
       vim.cmd.colorscheme 'cyberdream'
